@@ -1,0 +1,4 @@
+./install_node_packages_interactive.sh
+chmod +x install_node_packages_interactive.sh
+powershell -ExecutionPolicy Bypass -File install_node_packages_interactive.ps1
+powershell -ExecutionPolicy Bypass -File install_node_packages.ps1
