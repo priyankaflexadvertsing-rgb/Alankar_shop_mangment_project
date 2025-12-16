@@ -18,7 +18,7 @@ app.use(cookieParser());
 const server = http.createServer(app);
 const PORT = process.env.PORT;
 app.use("/thumbnails", express.static(compressed_printing_files));
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://alankar-shop-mangment-project-3c14.vercel.app", credentials: true }));
 app.use(express.json());
 
 app.use("/api/v1", authRoutes);
@@ -31,3 +31,4 @@ initSocketServer(server);
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`), connectDB();
 });
+
