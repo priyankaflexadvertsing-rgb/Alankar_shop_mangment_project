@@ -1,0 +1,55 @@
+{
+  "name": "ts-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"node dist/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/nodemailer": "^7.0.4",
+    "@types/passport-google-oauth20": "^2.0.17",
+    "@types/socket.io": "^3.0.1",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "exiftool-vendored": "^34.0.0",
+    "express": "^5.2.1",
+    "ioredis": "^5.8.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.1",
+    "multer": "^2.0.2",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.11",
+    "nodemon": "^3.1.11",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "sharp": "^0.34.5",
+    "soket.io": "^0.0.1-security",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.10.1",
+    "tsc-watch": "^7.2.0",
+    "typescript": "^5.9.3"
+  }
+}
