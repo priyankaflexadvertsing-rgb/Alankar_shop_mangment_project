@@ -101,7 +101,7 @@ const AuthForm = () => {
             <div className="w-full max-w-md bg-white border border-gray-200 rounded-lg shadow-sm p-8">
                  <div>
                         <button className={`w-full flex bg-gray-100 shadow-lg items-center justify-center text-black font-semibold cursor-pointer py-2 rounded-md transition
-                            ${loading ? "opacity-60 cursor-not-allowed" : "hover:bg-black hover:text-white"}`} onClick={() => window.open(`http://localhost:8000/auth/google`, "_self")}>
+                            ${loading ? "opacity-60 cursor-not-allowed" : "hover:bg-black hover:text-white"}`} onClick={() => window.open(`https://alankar-shop-mangment-project.onrender.com/auth/google`, "_self")}>
                             <img src="/public/google.png" alt="google" className="w-7 h-7 mr-4 bg-cover" />
                             Continue with Google
                         </button>
@@ -221,3 +221,4 @@ const AuthForm = () => {
 };
 
 export default AuthForm;
+
