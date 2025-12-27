@@ -1,0 +1,29 @@
+.loader {
+  border: 3px solid #ddd;
+  border-top: 3px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-dropdown {
+  animation: dropdown 0.15s ease-out forwards;
+}
