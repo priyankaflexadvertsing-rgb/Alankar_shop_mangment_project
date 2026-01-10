@@ -21,7 +21,7 @@ const PORT = process.env.PORT;
 /* -------------------- GLOBAL MIDDLEWARE -------------------- */
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://alankar-shop-mangment-project.vercel.app",
+    origin: "https://alankar-shop-mangment-project.vercel.app",
     credentials: true
 }));
 app.use(express.json());
