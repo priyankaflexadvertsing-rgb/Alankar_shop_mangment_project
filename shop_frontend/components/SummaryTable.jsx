@@ -106,9 +106,7 @@ export const SummaryTable = ({ printing, userId, role }) => {
                     <td className="p-2 border">{idx + 1}</td>
                     <td className="p-2 border flex items-center">
                       <img
-                        src={`${SOCKET_URI}/thumbnails/${encodeURIComponent(
-                          it.compressedfilePath.split("\\").pop()
-                        )}`}
+                        src={`${SOCKET_URI}/thumbnails/${it.compressedfilePath.split("\\").pop()}`}
                         alt={`Thumbnail ${idx + 1}`}
                         className="w-[50px] h-[50px] object-cover rounded mx-auto shadow-lg cursor-move"
                       />
@@ -241,3 +239,4 @@ export const SummaryTable = ({ printing, userId, role }) => {
     </>
   );
 };
+
