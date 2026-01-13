@@ -67,11 +67,15 @@ export const uploadPrinting = CatchAsyncError(
         rate,
       });
 
+         const fullPath:any = compressedFilePath;
+
+      const fileName = fullPath.match(/[^\\]+$/)[0];
+
       // 6️⃣ Prepare DB data
       const newPrintingData = {
         printingtype: "flex",
         originalfilePath: inputFilePath, // ✅ FIXED
-        compressedfilePath: compressedFilePath,
+        compressedfilePath: fileName,
         payment_details,
         fieldname,
         originalname,
@@ -261,3 +265,4 @@ export const updateprintingStatus = CatchAsyncError(
     });
   })
 );
+
